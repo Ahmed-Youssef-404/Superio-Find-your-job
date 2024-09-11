@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (scrollTopBtn) {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 600) {
         scrollTopBtn.style.display = "block";
       } else {
         scrollTopBtn.style.display = "none";
