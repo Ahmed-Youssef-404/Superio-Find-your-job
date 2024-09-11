@@ -1,0 +1,393 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px; /* Same as the navbar height */
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffc8c8;
+  background: linear-gradient(90deg, #deecff 0%, #ffffff 50%, #deecff 100%);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 50px 0 40px;
+  /* margin-top: 60px; */
+}
+
+.page-title a {
+  color: #3d3e3f;
+  text-decoration: none;
+}
+
+.page-title .currentPage {
+  color: #696969;
+}
+/* ----------------------------------Log in message---------------------- */
+
+/* Style the message div  */
+#message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+  padding: 20px;
+  border: 5px solid #1967d2;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  color: #101012;
+  font-weight: 600;
+  font-size: 30px;
+  cursor: default;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+#message .closeButton {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#message p {
+  margin: 0;
+}
+
+#message a {
+  color: #1967d2;
+  text-decoration: none;
+}
+
+#message a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #message {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+
+/* Style the overlay */
+#overlay {
+  display: none;
+  animation: fadeIn 0.3s ease forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 9998;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------Log in message---------------------- */
+
+/* ---------------------------------------------------------------------- */
+/* @media screen and (max-width: 900px) {
+    .search-section {
+        flex-direction: column;
+    }
+
+    .search-filters{
+        z-index: 999;
+        position: static !important;
+    }
+
+    .job-listings {
+        width: 100% !important;
+    }
+} */
+/* ---------------------------------------------------------------------- */
+
+.search-section {
+  display: flex;
+  padding: 20px;
+  padding-left: 0;
+  padding-top: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(222, 236, 255, 1) 25%
+  );
+}
+/* ---------------------------------------- search section ------------------------------------------ */
+
+.clearAll {
+  float: right;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: #fff;
+  margin: 10px 0;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  display: none;
+}
+
+.search-filters {
+  /* flex: 1; */
+  margin-right: 20px;
+  height: fit-content;
+  width: 30%;
+  position: sticky;
+  overflow: auto;
+  height: 88vh;
+  top: 60px;
+  background-color: #edf5ff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #e2eeff #edf5ff;
+  /* scrollbar-gutter: stable; */
+}
+
+.search-filters h2 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.searchInput {
+  border: solid 1px #1967d2;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #d2e5ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #1967d2;
+  outline: none;
+}
+
+.radioTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.radioButtonTitle {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.radioButtonTitle input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2); /* Makes radio buttons larger */
+  accent-color: #1967d2; /* Adds primary blue color to radio button */
+}
+
+.radioButtonTitle:hover {
+  color: #1967d2;
+}
+
+/* Adding responsiveness */
+@media (max-width: 768px) {
+  .search-filters {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+
+/* .search-filters input,
+.search-filters select {
+  width: 95%;
+  padding: 10px;
+
+  
+
+
+
+
+
+
+/* ---------------------------------------- search section ------------------------------------------ */
+
+/* ---------------------------------------- job section --------------------------------------------- */
+
+.job-listings {
+  /* flex: 3; */
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+  /* background-color: red; */
+}
+
+.job-title {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* margin-bottom: 10px; */
+}
+
+.job-card {
+  background-color: #f0f8ff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* cursor: pointer; */
+  scale: 1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, scale 0.3s;
+  display: flex;
+  align-items: center;
+  /* border: #deecff solid 5px; */
+  /* background-color: red; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  /* scale: 1.02;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.job-card:hover {
+  scale: 1.02;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 3px 5px 15px 3px rgba(0, 0, 0, 0.2); */
+}
+
+.job-card h3 {
+  /* margin: 0 0 10px 0; */
+  margin-left: 10px;
+  color: #202124;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 20px;
+}
+
+.job-card h3:hover {
+  color: #1967d2;
+}
+
+.job-info {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  /* font-size: 20px; */
+  display: flex;
+  margin: 0 5px;
+  color: #696969;
+}
+
+.job-card p {
+  margin: 0 0 10px 0;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 10px 0;
+}
+
+.tags li {
+  background-color: #d2d2ff;
+  border-radius: 30px;
+  font-size: small;
+  padding: 7px 15px;
+  margin-right: 7px;
+  border: solid 1px;
+}
+
+.tags .full-time {
+  background-color: #dde8f8;
+  color: #5867d2;
+}
+
+.tags .private {
+  background-color: #e1f2e5;
+  color: #34afa8;
+}
+
+.tags .urgent {
+  background-color: #fef2d9;
+  color: #f9ab00;
+}
+
+/* ---------------------------------------- job section --------------------------------------------- */
+
+.try {
+  /* background-color: rgb(220, 228, 255); */
+  padding: 10px;
+  width: 30%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.try .tryText {
+  /* font-size: 1.5rem; */
+  padding: 0;
+  margin-bottom: 0 !important;
+}
+
+.try .progress {
+  width: 100%;
+  height: 7px;
+  background-color: #cfe0fa;
+  margin: 10px 0;
+}
+
+.try .tryButton {
+  cursor: pointer;
+}
+
+.try .tryButton::after {
+  cursor: default;
+  content: "";
+  display: block;
+  background-color: #1967d2;
+  border-radius: 100px;
+  width: 65px;
+  height: 3px;
+  color: red;
+}
+
+nav {
+  background: linear-gradient(
+    90deg,
+    rgba(222, 236, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(222, 236, 255, 1) 100%
+  ) !important;
+}

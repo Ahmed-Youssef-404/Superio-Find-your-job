@@ -1,0 +1,114 @@
+/* ----------------------------------------Footer Job start----------------------------------- */
+/* --------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
+
+footer a {
+  all: unset !important;
+  cursor: pointer !important;
+}
+
+.main-footer {
+  font-size: 15px;
+  margin-top: 60px;
+}
+
+.phone-num {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-num a {
+  color: #1967d2 !important;
+  font-weight: 700 !important;
+  font-size: large !important;
+}
+
+.widget-content ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.widget-content li {
+  position: relative;
+  transition: padding-left 0.3s ease; /* Smoothly move text to the right */
+  cursor: pointer;
+  margin: 12px 0;
+  /* font-weight: 500; */
+}
+
+.widget-content li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #023680; /* Line color */
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Centers the line vertically with the text */
+  transition: width 0.3s ease; /* Smooth transition for the line */
+}
+
+.widget-content li:hover {
+  padding-left: 25px; /* Add space to move text when hovering */
+  color: #1967d2;
+}
+
+.widget-content li:hover::before {
+  width: 10%; /* The line expands on hover */
+}
+
+@media screen and (max-width: 992px) {
+  .widget-content li:hover {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .widget-content li:hover {
+    padding-left: 35px;
+  }
+  .widget-content li:hover::before {
+    width: 5%; /* The line expands on hover */
+  }
+}
+
+/* ---------------------------------------- Bottom footer --------------------------------------- */
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  border-top: solid #bababa;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-bottom {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
+  .footerIcon {
+    margin: 20px !important;
+  }
+}
+
+.footerIcon {
+  font-size: 25px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footerIcon:hover {
+  opacity: 1 !important;
+  color: #1967d2;
+}
+
+/* ----------------------------------------Footer Job end------------------------------------- */
+/* --------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/

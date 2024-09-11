@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Jobs</title>
+
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="../Link with files/CSS/all.min.css">
+    <link rel="stylesheet" href="../Link with files/CSS/footer.css">
+    <link rel="stylesheet" href="../Link with files/CSS/header.css">
+    <link rel="stylesheet" href="../Link with files/CSS/bootstrap css/bootstrap.min.css">
+
+
+    <!------------------------------------------- Font Awesome Pro ------------------------------------------->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+
+    <!------------------------------------------- Font Awesome Pro ------------------------------------------->
+  </head>
+  <body>
+    <!-- Log in message -->
+    <div id="message">
+      <p>
+        <span><a href="../Log in page/Login page.html">LOG IN</a></span> To
+        Browse The Full Content
+      </p>
+      <i class="fa-solid fa-xmark closeButton" onclick="closeMessage()"></i>
+    </div>
+    <div id="overlay" onclick="closeMessage()"></div>
+
+    <!-- ---------------------------------------------Nav bar start---------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- NavBar -->
+    <nav
+      class="navbar navbar-expand-xl"
+      aria-label="Offcanvas navbar large"
+      style="background-color: rgb(255, 255, 255)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <!-- <h1>Logo</h1> -->
+          <!-- <img src="images/logo.png" alt="" /> -->
+          <img
+            class="herologo"
+            src="https://superio-appdir.vercel.app/images/logo.svg"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+        >
+          <span class="d-flex align-content-center justify-content-center">
+            <i
+              class="fa-duotone fa-solid fa-bars m-auto"
+              style="font-size: xx-large"
+            ></i>
+          </span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <img
+              class="herologo"
+              src="https://superio-appdir.vercel.app/images/logo.svg"
+            />
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav navContent">
+              <li>
+                <a
+                  class="nav-link"
+                  href="../index.html"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="aboutDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Find Jobs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <a class="dropdown-item" style="font-weight: bold" href="#"
+                    >job listing</a
+                  >
+                  <a class="dropdown-item" href="#">job list v1</a>
+
+                  <a class="dropdown-item" href="#">job list v3</a>
+                  <a class="dropdown-item" href="#">job list v4</a>
+                  <a class="dropdown-item" href="#">job list v5</a>
+                </div>
+              </li>
+              <!-- Services with dropdown -->
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Employers
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="#">Employer list</a>
+                  <a class="dropdown-item" href="#">Employer single</a>
+                  <a class="dropdown-item" href="#">Employer dashboard</a>
+                </div>
+              </li>
+
+              <!-- Contact with dropdown -->
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="contactDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Candidates
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <a class="dropdown-item" href="#">Candidate list</a>
+                  <a class="dropdown-item" href="#">Candidate single</a>
+                  <a class="dropdown-item" href="#">Candidate dashboard</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="contactDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <a class="dropdown-item" href="#">Blog list v1</a>
+                  <a class="dropdown-item" href="#">Blog list v2</a>
+                  <a class="dropdown-item" href="#">Blog list v3</a>
+                  <a class="dropdown-item" href="#">Blog details</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="contactDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <a class="dropdown-item" href="#">Shop </a>
+                  <a class="dropdown-item" href="#"> About</a>
+                  <a class="dropdown-item" href="#">Pricing</a>
+                  <a class="dropdown-item" href="#"> FAQ's</a>
+                  <a class="dropdown-item" href="#">Terms</a>
+                  <a class="dropdown-item" href="#">Invoice</a>
+                  <a class="dropdown-item" href="#">Contact</a>
+                  <a class="dropdown-item" href="#">404</a>
+                </div>
+              </li>
+              <li>
+                <a class="Cv nav-link" id="CV" href="../jobs CV (Updated)/index.html"
+                  >upload your CV</a
+                >
+              </li>
+              <li>
+                <a href="../log in sign up/Log in/Log in page/index.html">
+                    <button class="logInSignUp nav-link" id="login-btn">
+                        Login/Register
+                    </button>
+                </a>
+              </li>
+              <li>
+                <button class="jobPost nav-link" id="job-post">Job Post</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ---------------------------------------------Nav bar end------------------------------------------------ -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <section class="page-title">
+      <!-- <div class="auto-container"> -->
+      <!-- <div class="title-outer"> -->
+      <h1>Find Jobs</h1>
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item currentPage">Jobs</li>
+      </ul>
+      <!-- </div> -->
+      <!-- </div> -->
+    </section>
+
+    <section class="search-section">
+      <aside class="search-filters">
+        <label class="radioButtonTitle" for="search-keywords"
+          ><h2>Search by Keywords</h2></label
+        >
+        <input
+          class="searchInput"
+          type="text"
+          id="search-keywords"
+          placeholder="Enter keywords"
+        />
+
+        <button class="clearAll">Clear All</button>
+
+        <h2 class="radioTitle">Category</h2>
+        <label class="radioButtonTitle"
+          ><input type="radio" name="category" value="all" checked /> All
+          Categories</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="category" value="design" /> Design</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="category" value="development" />
+          Development</label
+        >
+
+        <h2 class="radioTitle">Job Type</h2>
+        <label class="radioButtonTitle"
+          ><input type="radio" name="job-type" value="all" checked /> All Job
+          Types</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="job-type" value="full-time" /> Full
+          Time</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="job-type" value="part-time" /> Part
+          Time</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="job-type" value="freelancer" />
+          Freelancer</label
+        >
+
+        <h2 class="radioTitle">Posted</h2>
+        <label class="radioButtonTitle"
+          ><input type="radio" name="date-posted" value="any" checked /> Any
+          Date</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="date-posted" value="last24" /> Last 24
+          Hours</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="date-posted" value="last7" /> Last 7
+          Days</label
+        >
+
+        <h2 class="radioTitle">Level</h2>
+        <label class="radioButtonTitle"
+          ><input type="radio" name="experience-level" value="any" checked />
+          Any Level</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="experience-level" value="entry" /> Entry
+          Level</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="experience-level" value="mid" /> Mid
+          Level</label
+        >
+        <label class="radioButtonTitle"
+          ><input type="radio" name="experience-level" value="senior" /> Senior
+          Level</label
+        >
+      </aside>
+
+      <main class="job-listings" id="job-listings">
+        <!-- job 1 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="full-time"
+          data-date="last24"
+          data-experience="senior"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/segment.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <!-- <img src="job-details/job-details-1.html" alt=""> -->
+            <h3 onclick="showMessage()">
+              Software Engineer (Android)
+            </h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Segment</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Cairo</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>11 hours ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$35k - $45k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Full Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 2 -->
+        <div
+          class="job-card"
+          data-category="design"
+          data-type="full-time"
+          data-date="last24"
+          data-experience="senior"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/upwork.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">
+              Senior Product Designer
+            </h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Upwork</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Riyadh</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>16 hours ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$20k - $35k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Full Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 3 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="full-time"
+          data-date="last7"
+          data-experience="senior"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/Medium.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">
+              Senior Full Stack Engineer
+            </h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Medium</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Alexandria</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>4 days ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$35k - $45k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Full Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 4 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="part-time"
+          data-date="last7"
+          data-experience="entry"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/invision.svg"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">
+              Joiner Product Manager
+            </h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Medium</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Tanta</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>Yesterday</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$15k - $25k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Part Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 5 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="part-time"
+          data-date="last7"
+          data-experience="mid"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/Catalyst.jpeg"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">Cyber Security Engineer</h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Catalyst</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Dubai</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>2 days ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$40k - $55k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Part Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 6 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="full-time"
+          data-date="last24"
+          data-experience="mid"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/Figma.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">Web Developer</h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Figma</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Abu Dhabi</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>6 hours ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$35k - $45k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time" value="full-time">Full Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 7 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="freelancer"
+          data-date="last7"
+          data-experience="mid"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/Khamsat.svg"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">Mobile Application Developer</h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Khamsat</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Abha</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>2 days ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$35k - $45k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Freelancer</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 8 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="freelancer"
+          data-date="last7"
+          data-experience="mid"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/mostaql.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">Data Analyst</h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Mostaql</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Jeddah</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>6 days ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$35k - $45k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Freelancer</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 9 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="full-time"
+          data-date="last24"
+          data-experience="senior"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/upwork.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">Software Engineer</h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Upwork</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Cairo</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>2 hours ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$35k - $45k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Full Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 10 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="development"
+          data-date="last24"
+          data-experience="senior"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/segment.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">DevOps Engineer</h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Segment</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Abu Dhabi</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>3 hours ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$35k - $45k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Full Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 11 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="part-time"
+          data-date="last7"
+          data-experience="entry"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/Medium.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">IT Project Manager</h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Medium</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Mansoura</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>2 days ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$25k - $35k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Part Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 12 -->
+        <div
+          class="job-card"
+          data-category="development"
+          data-type="part-time"
+          data-date="last7"
+          data-experience="mid"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/upwork.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">Software Tester</h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Upwork</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Cairo</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>5 days ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$35k - $45k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Part Time</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 13 -->
+        <div
+          class="job-card"
+          data-category="design"
+          data-type="freelancer"
+          data-date="last7"
+          data-experience="entry"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/Khamsat.svg"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">UI/UX Designer</h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Khamsat</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Tanta</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>2 days ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$15k - $25k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Freelancer</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- job 14 -->
+        <div
+          class="job-card"
+          data-category="design"
+          data-type="freelancer"
+          data-date="last7"
+          data-experience="entry"
+        >
+          <i
+            class="fa-regular fa-bookmark"
+            style="position: absolute; right: 18px; cursor: pointer"
+          ></i>
+          <div class="job-title">
+            <img
+              src="images/mostaql.png"
+              alt=""
+              style="width: 50px; border-radius: 10px"
+            />
+            <h3 onclick="showMessage()">
+              Graphic Designer
+            </h3>
+          </div>
+          <!-- <p>Posted: 11 hours ago</p> -->
+          <div style="margin-left: 60px">
+            <div class="job-info">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase fa-fw"></i>&nbsp
+                <p>Mostaql</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <p>Riyadh</p>
+              </div>
+              <div class="icon">
+                <i class="fa-regular fa-clock"></i>&nbsp
+                <p>4 days ago</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>&nbsp
+                <p>$35k - $45k</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tags-info full-time">Freelancer</li>
+              <li class="tags-info private">Private</li>
+              <li class="tags-info urgent">Urgent</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <div class="try">
+      <div class="tryText">
+        <p class="my-1">Show 15 of 97 Jobs</p>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" style="width: 40%"></div>
+      </div>
+      <div class="tryButton">
+        <a onclick="showMessage()">Show more</a>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------ -->
+
+    <!-- ---------------------------------------------Footer start----------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <footer class="container main-footer">
+      <div class="row">
+        <div class="col-xl-4 col-lg-3 col-md-12">
+          <div class="footer-column">
+            <div class="logo">
+              <a href="#"
+                ><img
+                  style="cursor: pointer; margin-bottom: 20px"
+                  alt="brand"
+                  width="154"
+                  height="50"
+                  src="https://superio-appdir.vercel.app/images/logo.svg"
+              /></a>
+            </div>
+            <p class="phone-num">
+              <span>Call us </span><a href="#">123 456 7890</a>
+            </p>
+            <p class="opacity-75">
+              329 Queensberry Street, North Melbourne VIC<br />
+              3051, Australia. <br /><a
+                href="#"
+                class="email"
+                style="cursor: pointer"
+                >support@superio.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-8 col-lg-9 col-md-12">
+          <div class="row">
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div>
+                <h5>For Candidates</h5>
+                <div class="widget-content opacity-75">
+                  <ul>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="#">Browse Categories</a></li>
+                    <li>
+                      <a href="#">Candidate Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#">Job Alerts</a>
+                    </li>
+                    <li>
+                      <a href="#">My Bookmarks</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div>
+                <h5>For Employers</h5>
+                <div class="widget-content opacity-75">
+                  <ul>
+                    <li>
+                      <a href="#">Browse Candidates</a>
+                    </li>
+                    <li>
+                      <a href="#">Employer Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#">Add Job</a>
+                    </li>
+                    <li>
+                      <a href="#">Job Packages</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div>
+                <h5>About Us</h5>
+                <div class="widget-content opacity-75">
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Job Page Invoice</a></li>
+                    <li><a href="#">Terms Page</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div>
+                <h5>Helpful Resources</h5>
+                <div class="widget-content opacity-75">
+                  <ul>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Center</a></li>
+                    <li><a href="#">Security Center</a></li>
+                    <li><a href="#">Accessibility Center</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="opacity-75">
+          © 2024 Superio by
+          <a href="#" style="cursor: pointer">
+            <strong>Team 4 React</strong>
+          </a>
+          . All Right Reserved.
+        </div>
+        <div>
+          <a href="#`">
+            <i class="fa-brands fa-facebook footerIcon opacity-75"></i>
+          </a>
+          <a href="#`">
+            <i class="fa-brands fa-instagram footerIcon opacity-75"></i>
+          </a>
+          <a href="#`">
+            <i class="fa-brands fa-linkedin footerIcon opacity-75"></i>
+          </a>
+          <a href="#`">
+            <i class="fa-brands fa-youtube footerIcon opacity-75"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ---------------------------------------------Footer end------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script/main.js"></script>
+    <script src="../Link with files/js/bootstrap js/bootstrap.bundle.min.js"></script>
+    <script src="../Link with files/js/bootstrap js/bootstrap.min.js"></script>
+    <script src="../Link with files/js/message/message.js"></script>
+
+  </body>
+</html>

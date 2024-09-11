@@ -1,0 +1,5 @@
+1. Fixed the navbar issue.
+2. Handled some issues in "Hero" section.
+3. Handled some responsiveness issues.
+4. Added "Recruiting" section.
+5. Added the Footer.

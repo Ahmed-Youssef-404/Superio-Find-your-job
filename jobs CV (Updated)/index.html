@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Cv</title>
+
+    <link rel="stylesheet" href="assests/css/main.css">
+    <link rel="stylesheet" href="../Link with files/CSS/all.min.css">
+    <link rel="stylesheet" href="../Link with files/CSS/footer.css">
+    <link rel="stylesheet" href="../Link with files/CSS/header.css">
+    <link rel="stylesheet" href="../Link with files/CSS/bootstrap css/bootstrap.min.css">
+
+    <!------------------------------------------- Font Awesome Pro ------------------------------------------->
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d" />
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css" />
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css" />
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css" />
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css" />
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css" />
+
+    <!------------------------------------------- Font Awesome Pro ------------------------------------------->
+</head>
+
+<body>
+
+
+    <!-- ---------------------------------------------Nav bar start---------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-xl" aria-label="Offcanvas navbar large"
+        style="background-color: rgb(255, 255, 255)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <!-- <h1>Logo</h1> -->
+                <!-- <img src="images/logo.png" alt="" /> -->
+                <img class="herologo" src="https://superio-appdir.vercel.app/images/logo.svg" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                aria-controls="offcanvasNavbar2">
+                <span class="d-flex align-content-center justify-content-center">
+                    <i class="fa-duotone fa-solid fa-bars m-auto" style="font-size: xx-large"></i>
+                </span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <img class="herologo" src="https://superio-appdir.vercel.app/images/logo.svg" />
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav navContent">
+                        <li class="nav-item dropdown navItem">
+                            <a class="nav-link" href="../index.html"
+                                aria-haspopup="true" aria-expanded="false">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown navItem">
+                            <a class="nav-link dropdown-toggle" href="../Find jobs/index.html" id="aboutDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Find Jobs
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <a class="dropdown-item" style="font-weight: bold" href="../Find jobs/index.html">job listing</a>
+                                <a class="dropdown-item" href="#">job list v1</a>
+
+                                <a class="dropdown-item" href="#">job list v3</a>
+                                <a class="dropdown-item" href="#">job list v4</a>
+                                <a class="dropdown-item" href="#">job list v5</a>
+                            </div>
+                        </li>
+                        <!-- Services with dropdown -->
+                        <li class="nav-item dropdown navItem">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Employers
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <a class="dropdown-item" href="#">Employer list</a>
+                                <a class="dropdown-item" href="#">Employer single</a>
+                                <a class="dropdown-item" href="#">Employer dashboard</a>
+                            </div>
+                        </li>
+
+                        <!-- Contact with dropdown -->
+                        <li class="nav-item dropdown navItem">
+                            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Candidates
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                                <a class="dropdown-item" href="#">Candidate list</a>
+                                <a class="dropdown-item" href="#">Candidate single</a>
+                                <a class="dropdown-item" href="#">Candidate dashboard</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown navItem">
+                            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Blog
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                                <a class="dropdown-item" href="#">Blog list v1</a>
+                                <a class="dropdown-item" href="#">Blog list v2</a>
+                                <a class="dropdown-item" href="#">Blog list v3</a>
+                                <a class="dropdown-item" href="#">Blog details</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown navItem">
+                            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                                <a class="dropdown-item" href="#">Shop </a>
+                                <a class="dropdown-item" href="#"> About</a>
+                                <a class="dropdown-item" href="#">Pricing</a>
+                                <a class="dropdown-item" href="#"> FAQ's</a>
+                                <a class="dropdown-item" href="#">Terms</a>
+                                <a class="dropdown-item" href="#">Invoice</a>
+                                <a class="dropdown-item" href="#">Contact</a>
+                                <a class="dropdown-item" href="#">404</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="Cv nav-link" id="CV" href="#">upload your CV</a>
+                        </li>
+                        <li>
+                            <a href="../log in sign up/Log in/Log in page/index.html">
+                                <button class="logInSignUp nav-link" id="login-btn">
+                                    Login/Register
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <button class="jobPost nav-link" id="job-post">Job Post</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------------------------------------------Nav bar end------------------------------------------------ -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <section class="page-title">
+        <!-- <div class="auto-container"> -->
+        <!-- <div class="title-outer"> -->
+        <h1>Apply for your new job!</h1>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item currentPage">Apply</li>
+        </ul>
+        <!-- </div> -->
+        <!-- </div> -->
+    </section>
+
+
+
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------- -->
+    <div class="container formHolder">
+        <form>
+            <div class="row d-flex justify-content-between">
+                <div class="col-6">
+                    <label for="email1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" />
+                </div>
+                <div class="col-6">
+                    <label for="username1" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username1" aria-describedby="usernameHelp" />
+                </div>
+            </div>
+
+            <!-- Specialisms and Job Type -->
+            <div class="row d-flex justify-content-between">
+                <div class="col-6">
+                    <label for="specialisms" class="form-label">Specialisms</label>
+                    <input list="specialisms-options" class="form-control" id="specialisms" />
+                    <datalist id="specialisms-options">
+                        <option value="Banking">
+                        <option value="Digital creating">
+                        <option value="Retail">
+                        <option value="Human resources">
+                        <option value="Management">
+                        <option value="Accounting & finance">
+                    </datalist>
+                </div>
+                <div class="col-6">
+                    <label for="job-type" class="form-label">Job type</label>
+                    <input list="job-options" class="form-control" id="job-type" />
+                    <datalist id="job-options">
+                        <option value="Full-time">
+                        <option value="Part-time">
+                        <option value="Freelance">
+                    </datalist>
+                </div>
+            </div>
+
+            <!-- Other Inputs -->
+            <div class="row d-flex justify-content-between">
+                <div class="col-6">
+                    <label for="salary" class="form-label">Offered Salary</label>
+                    <input list="salary-options" class="form-control" id="salary" />
+                    <datalist id="salary-options">
+                        <option value="1500$">
+                        <option value="2000$">
+                        <option value="3000$">
+                        <option value="Other">
+                    </datalist>
+                </div>
+                <div class="col-6">
+                    <label for="career-level" class="form-label">Career Level</label>
+                    <input list="career-options" class="form-control" id="career-level" />
+                    <datalist id="career-options">
+                        <option value="Entry Level">
+                        <option value="Mid Level">
+                        <option value="Senior Level">
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-between">
+                <div class="col-6">
+                    <label for="experience" class="form-label">Experience</label>
+                    <input list="experience-options" class="form-control" id="experience" />
+                    <datalist id="experience-options">
+                        <option value="1-2 years">
+                        <option value="3-5 years">
+                        <option value="5+ years">
+                    </datalist>
+                </div>
+                <div class="col-6">
+                    <label for="gender" class="form-label">Gender</label>
+                    <input list="gender-options" class="form-control" id="gender" />
+                    <datalist id="gender-options">
+                        <option value="Male">
+                        <option value="Female">
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-between">
+                <div class="col-6">
+                    <label for="industry" class="form-label">Industry</label>
+                    <input list="industry-options" class="form-control" id="industry" />
+                    <datalist id="industry-options">
+                        <option value="Technology">
+                        <option value="Healthcare">
+                    </datalist>
+                </div>
+                <div class="col-6">
+                    <label for="qualification" class="form-label">Qualification</label>
+                    <input list="qualification-options" class="form-control" id="qualification" />
+                    <datalist id="qualification-options">
+                        <option value="Bachelor's">
+                        <option value="Master's">
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-between">
+                <div class="col-6">
+                    <label for="country" class="form-label">Country</label>
+                    <input list="country-options" class="form-control" id="country" />
+                    <datalist id="country-options">
+                        <option value="Egypt">
+                        <option value="KSA">
+                        <option value="Dubai">
+                    </datalist>
+                </div>
+                <div class="col-6">
+                    <label for="city" class="form-label">City</label>
+                    <input list="city-options" class="form-control" id="city" />
+                    <datalist id="city-options">
+                        <option value="Cairo">
+                        <option value="Riyadh">
+                        <option value="Abu Dhabi">
+                    </datalist>
+                </div>
+            </div>
+
+            <label for="complete-address" class="form-label">Complete Address</label>
+            <input type="text" class="form-control" id="complete-address" />
+
+            <label for="formFileLg" class="form-label">Upload your CV</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file" />
+
+            <div class="button-container text-center">
+                <button class="btn btn-primary mt-3" onclick="">Next</button>
+            </div>
+        </form>
+    </div>
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------- -->
+
+
+
+    <!-- ---------------------------------------------Footer start----------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <footer class="container main-footer">
+        <div class="row">
+            <div class="col-xl-4 col-lg-3 col-md-12">
+                <div class="footer-column">
+                    <div class="logo">
+                        <a href="#"><img style="cursor: pointer; margin-bottom: 20px" alt="brand" width="154"
+                                height="50" src="https://superio-appdir.vercel.app/images/logo.svg" /></a>
+                    </div>
+                    <p class="phone-num">
+                        <span>Call us </span><a href="#">123 456 7890</a>
+                    </p>
+                    <p class="opacity-75">
+                        329 Queensberry Street, North Melbourne VIC<br />
+                        3051, Australia. <br /><a href="#" class="email" style="cursor: pointer">support@superio.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xl-8 col-lg-9 col-md-12">
+                <div class="row">
+                    <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                        <div>
+                            <h5>For Candidates</h5>
+                            <div class="widget-content opacity-75">
+                                <ul>
+                                    <li><a href="#">Browse Jobs</a></li>
+                                    <li><a href="#">Browse Categories</a></li>
+                                    <li>
+                                        <a href="#">Candidate Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Job Alerts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">My Bookmarks</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                        <div>
+                            <h5>For Employers</h5>
+                            <div class="widget-content opacity-75">
+                                <ul>
+                                    <li>
+                                        <a href="#">Browse Candidates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Employer Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Add Job</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Job Packages</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                        <div>
+                            <h5>About Us</h5>
+                            <div class="widget-content opacity-75">
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Job Page Invoice</a></li>
+                                    <li><a href="#">Terms Page</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                        <div>
+                            <h5>Helpful Resources</h5>
+                            <div class="widget-content opacity-75">
+                                <ul>
+                                    <li><a href="#">Site Map</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Privacy Center</a></li>
+                                    <li><a href="#">Security Center</a></li>
+                                    <li><a href="#">Accessibility Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="opacity-75">
+                © 2024 Superio by
+                <a href="#" style="cursor: pointer">
+                    <strong>Team 4 React</strong>
+                </a>
+                . All Right Reserved.
+            </div>
+            <div>
+                <a href="#`">
+                    <i class="fa-brands fa-facebook footerIcon opacity-75"></i>
+                </a>
+                <a href="#`">
+                    <i class="fa-brands fa-instagram footerIcon opacity-75"></i>
+                </a>
+                <a href="#`">
+                    <i class="fa-brands fa-linkedin footerIcon opacity-75"></i>
+                </a>
+                <a href="#`">
+                    <i class="fa-brands fa-youtube footerIcon opacity-75"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ---------------------------------------------Footer end------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../Link with files/js/bootstrap js/bootstrap.bundle.min.js"></script>
+    <script src="../Link with files/js/bootstrap js/bootstrap.min.js"></script>
+    <script src="../Link with files/js/message/message.js"></script>
+
+</body>
+
+</html>

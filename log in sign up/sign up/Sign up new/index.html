@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    
+    <link rel="stylesheet" href="Style/Login page style.css" />
+    <link rel="stylesheet" href="../../../Link with files/CSS/all.min.css">
+    <link rel="stylesheet" href="../../../Link with files/CSS/footer.css">
+    <link rel="stylesheet" href="../../../Link with files/CSS/header.css">
+    <link rel="stylesheet" href="../../../Link with files/CSS/bootstrap css/bootstrap.min.css">
+
+
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+  </head>
+
+  <body>
+    <!-- Log in message -->
+    <div id="message">
+      <p>Something went wrong.</p><p>Please try again later</p>
+      <i class="fa-solid fa-xmark closeButton" onclick="closeMessage()"></i>
+    </div>
+    <div id="overlay" onclick="closeMessage()"></div>
+
+    <div id="submission-message">
+        <p><span>Submission Failed</span><br></p>
+        <div id="should"></div>
+        <div id="match"></div>
+        <i class="fa-solid fa-xmark closeButton" onclick="closeMessage()"></i>
+    </div>
+
+
+    <!-- ---------------------------------------------Nav bar start---------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- NavBar -->
+    <nav
+      class="navbar navbar-expand-xl"
+      aria-label="Offcanvas navbar large"
+      style="background-color: rgb(255, 255, 255)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <!-- <h1>Logo</h1> -->
+          <!-- <img src="images/logo.png" alt="" /> -->
+          <img
+            class="herologo"
+            src="https://superio-appdir.vercel.app/images/logo.svg"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+        >
+          <span class="d-flex align-content-center justify-content-center">
+            <i
+              class="fa-duotone fa-solid fa-bars m-auto"
+              style="font-size: xx-large"
+            ></i>
+          </span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <img
+              class="herologo"
+              src="https://superio-appdir.vercel.app/images/logo.svg"
+            />
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav navContent">
+              <li>
+                <a
+                  class="nav-link"
+                  href="../../../index.html"
+                >
+                  Home
+                </a>
+              </li>
+                
+              </li>
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="aboutDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Find Jobs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <a class="dropdown-item" style="font-weight: bold" href="../../../Find jobs/index.html"
+                    >job listing</a
+                  >
+                  <a class="dropdown-item" href="#">job list v1</a>
+
+                  <a class="dropdown-item" href="#">job list v3</a>
+                  <a class="dropdown-item" href="#">job list v4</a>
+                  <a class="dropdown-item" href="#">job list v5</a>
+                </div>
+              </li>
+              <!-- Services with dropdown -->
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Employers
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="#">Employer list</a>
+                  <a class="dropdown-item" href="#">Employer single</a>
+                  <a class="dropdown-item" href="#">Employer dashboard</a>
+                </div>
+              </li>
+
+              <!-- Contact with dropdown -->
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="contactDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Candidates
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <a class="dropdown-item" href="#">Candidate list</a>
+                  <a class="dropdown-item" href="#">Candidate single</a>
+                  <a class="dropdown-item" href="#">Candidate dashboard</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="contactDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <a class="dropdown-item" href="#">Blog list v1</a>
+                  <a class="dropdown-item" href="#">Blog list v2</a>
+                  <a class="dropdown-item" href="#">Blog list v3</a>
+                  <a class="dropdown-item" href="#">Blog details</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown navItem">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="contactDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                  <a class="dropdown-item" href="#">Shop </a>
+                  <a class="dropdown-item" href="#"> About</a>
+                  <a class="dropdown-item" href="#">Pricing</a>
+                  <a class="dropdown-item" href="#"> FAQ's</a>
+                  <a class="dropdown-item" href="#">Terms</a>
+                  <a class="dropdown-item" href="#">Invoice</a>
+                  <a class="dropdown-item" href="#">Contact</a>
+                  <a class="dropdown-item" href="#">404</a>
+                </div>
+              </li>
+              <li>
+                <a class="Cv nav-link" id="CV" href="../../../jobs CV (Updated)/index.html"
+                  >upload your CV</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                    <button class="logInSignUp nav-link" id="login-btn">
+                        Login/Register
+                    </button>
+                </a>
+              </li>
+              <li>
+                <button class="jobPost nav-link" id="job-post">Job Post</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ---------------------------------------------Nav bar end------------------------------------------------ -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <div class="logInContainer container">
+      <div class="holder">
+        <div class="E-mail">
+          <h1>Create new account</h1>
+
+          <form id="signup-form" action="">
+            <div class="row" id="row1">
+              <!-- first and last name -->
+
+              <div class="element">
+                <label for="first-name-input" class="lable">First Name:</label>
+                <input
+                  type="text"
+                  class="input-field half-input"
+                  id="first-name-input"
+                  required
+                />
+              </div>
+
+              <div class="element">
+                <label for="second-name-input" class="lable">Last Name:</label>
+                <input
+                  type="text"
+                  class="input-field half-input"
+                  id="second-name-input"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row" id="row2">
+              <!-- birth date and gender -->
+
+              <div class="element">
+                <label for="birth-date" class="lable">Birth Date:</label>
+                <input
+                  type="date"
+                  class="input-field half-input"
+                  id="birth-date"
+                  required
+                />
+              </div>
+
+              <div class="element">
+                <label for="gender" class="lable">Gender:</label>
+                <select class="input-field half-input" id="gender" required>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="element">
+                <label for="email" class="lable">Email:</label>
+                <input type="email" class="input-field" id="email" required />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="element">
+                <div class="password-holder">
+                  <label for="password" class="lable">Password:</label>
+                  <input type="checkbox" id="show-password-checkbox" />
+                  <label for="show-password-checkbox" id="show-password-label"
+                    >Show Password</label
+                  >
+                </div>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="input-field"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="element">
+                <div class="password-holder">
+                  <label for="confirmPassword" class="lable"
+                    >Confirm Password:</label
+                  >
+                  <div id="confirm-password-validation-message"></div>
+                </div>
+                <input
+                  type="password"
+                  class="input-field"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <button type="submit" class="btn" onclick="sign_Up()">
+                Sign up
+              </button>
+            </div>
+
+            <div>
+              <div class="register-link">
+                <p>
+                  Already have an account?
+                  <a
+                    href="../../Log in/Log in page/index.html"
+                    title="Log in with your account"
+                    ><strong>Login</strong></a
+                  >
+                  now!
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="or">
+          <div class="line"></div>
+          <div>OR</div>
+          <div class="line"></div>
+        </div>
+
+        <div class="sites">
+          <h1>Continue with</h1>
+
+          <div class="socialHolder">
+            <div class="continue-with">
+              <a
+                href="../Error page image/Error 404.html"
+                title="Login using Google account"
+              >
+                <div class="the-site" id="Google" style="color: #dc4d28">
+                  <i class="fa-brands fa-google"></i>
+                  <div>Google</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="continue-with">
+              <a
+                href="../Error page image/Error 404.html"
+                title="Login using Facebook account"
+              >
+                <div class="the-site" id="Facebook" style="color: #3b5998">
+                  <i class="fa-brands fa-facebook"></i>
+                  <div>Facebook</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------Footer start----------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <footer class="container main-footer">
+      <div class="row">
+        <div class="col-xl-4 col-lg-3 col-md-12">
+          <div class="footer-column">
+            <div class="logo">
+              <a href="#"
+                ><img
+                  style="cursor: pointer; margin-bottom: 20px"
+                  alt="brand"
+                  width="154"
+                  height="50"
+                  src="https://superio-appdir.vercel.app/images/logo.svg"
+              /></a>
+            </div>
+            <p class="phone-num">
+              <span>Call us </span><a href="#">123 456 7890</a>
+            </p>
+            <p class="opacity-75">
+              329 Queensberry Street, North Melbourne VIC<br />
+              3051, Australia. <br /><a
+                href="#"
+                class="email"
+                style="cursor: pointer"
+                >support@superio.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-8 col-lg-9 col-md-12">
+          <div class="row">
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div>
+                <h5>For Candidates</h5>
+                <div class="widget-content opacity-75">
+                  <ul>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="#">Browse Categories</a></li>
+                    <li>
+                      <a href="#">Candidate Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#">Job Alerts</a>
+                    </li>
+                    <li>
+                      <a href="#">My Bookmarks</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div>
+                <h5>For Employers</h5>
+                <div class="widget-content opacity-75">
+                  <ul>
+                    <li>
+                      <a href="#">Browse Candidates</a>
+                    </li>
+                    <li>
+                      <a href="#">Employer Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#">Add Job</a>
+                    </li>
+                    <li>
+                      <a href="#">Job Packages</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div>
+                <h5>About Us</h5>
+                <div class="widget-content opacity-75">
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Job Page Invoice</a></li>
+                    <li><a href="#">Terms Page</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+              <div>
+                <h5>Helpful Resources</h5>
+                <div class="widget-content opacity-75">
+                  <ul>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Center</a></li>
+                    <li><a href="#">Security Center</a></li>
+                    <li><a href="#">Accessibility Center</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="opacity-75">
+          © 2024 Superio by
+          <a href="#" style="cursor: pointer">
+            <strong>Team 4 React</strong>
+          </a>
+          . All Right Reserved.
+        </div>
+        <div>
+          <a href="#`">
+            <i class="fa-brands fa-facebook footerIcon opacity-75"></i>
+          </a>
+          <a href="#`">
+            <i class="fa-brands fa-instagram footerIcon opacity-75"></i>
+          </a>
+          <a href="#`">
+            <i class="fa-brands fa-linkedin footerIcon opacity-75"></i>
+          </a>
+          <a href="#`">
+            <i class="fa-brands fa-youtube footerIcon opacity-75"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ---------------------------------------------Footer end------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="JS/sign up.js"></script>
+    <script src="JS/sign up.js"></script>
+    <script src="../../../Link with files/js/bootstrap js/bootstrap.bundle.min.js"></script>
+    <script src="../../../Link with files/js/bootstrap js/bootstrap.min.js"></script>
+  </body>
+</html>
